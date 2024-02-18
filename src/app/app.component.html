@@ -5,8 +5,8 @@
   <div class="notice-info">
     <p>Read terms of services and privacy policy.</p>
   </div>
-  <ng-template [ngIf]="display" [ngIfElse]="myTempVar">
-    <div class="notice-body">
+  <!-- <ng-template [ngIf]="display" [ngIfElse]="myTempVar"> -->
+    <div class="notice-body" *appIf="display">
       <h1>Read terms of services and privacy policy.</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam dolore nemo. Blanditiis vel natus exercitationem, rerum magnam nobis earum atque esse voluptas, quisquam soluta dignissimos placeat dolores nulla tenetur.
@@ -20,12 +20,12 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam dolore nemo. Blanditiis vel natus exercitationem, rerum magnam nobis earum atque esse voluptas, quisquam soluta dignissimos placeat dolores nulla tenetur.
       </p>
     </div>
-  </ng-template>
-    <ng-template #myTempVar>
+  <!-- </ng-template> -->
+    <!-- <ng-template #myTempVar>
       <div class="notice-body">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quibusdam dolore nemo. Blanditiis vel natus exercitationem, rerum magnam nobis earum atque esse voluptas, quisquam soluta dignissimos placeat dolores nulla tenetur.
         </p>
       </div>
-    </ng-template>
+    </ng-template> -->
 </div>
